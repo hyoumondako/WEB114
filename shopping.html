@@ -5,29 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB114 Week 3</title>
-</head>
 
-<style>
+    <style>
     body {background-color: #fffae5; font-family: 'Courier New', Courier, monospace;}
-
-</style>
-
-<script>
-
-let total = prompt("How much did you spend?");
-let confirmed = confirm("$" + total + " total? Click OK to continue.");
-
-if (total < 50) {
-    alert("No discount.");
-}
-if (total >= 75) {
-    alert("10% off");
-}
-if (total >= 100) {
-    alert("20% off");
-}
-
-</script>
+    </style>
+</head>
 
 <body>
     <h1>Week 3 Assignment</h1>
@@ -46,6 +28,24 @@ if (total >= 100) {
     </ol>
 
     <h3>Refresh for prompt/confirm window exercise.</h3>
+
+    <script>
+
+        let total = prompt("How much did you spend?");
+        let confirmed = confirm("$" + total + " total? Click OK to continue.");
+
+        if (total < 50) {
+            alert("No discount.");
+        }
+        if (total >= 75) {
+            alert("10% off");
+        }
+        if (total >= 100) {
+            alert("20% off");
+        }
+
+    </script>
+
 
 </body>
 </html>
