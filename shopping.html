@@ -1,0 +1,51 @@
+<!--Loren Bracciano WEB114 Oct 21 2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB114 Week 3</title>
+</head>
+
+<style>
+    body {background-color: #fffae5; font-family: 'Courier New', Courier, monospace;}
+
+</style>
+
+<script>
+
+let total = prompt("How much did you spend?");
+let confirmed = confirm("$" + total + " total? Click OK to continue.");
+
+if (total < 50) {
+    alert("No discount.");
+}
+if (total >= 75) {
+    alert("10% off");
+}
+if (total >= 100) {
+    alert("20% off");
+}
+
+</script>
+
+<body>
+    <h1>Week 3 Assignment</h1>
+    <p>Loren Bracciano 10/21/2025</p>
+    
+    <h2>Questions</h2>
+    <ol>
+        <li>Name a situation where you would need to create an "if" statement.  (There are many answers to this question. )</li>
+        <li>When comparing values,  in what data type is the result stored? (number, string, or Boolean?)</li>
+    </ol>
+
+    <h2>Answers</h2>
+    <ol>
+        <li>When you need to compare values in most any capacity, you can use an "if" statement; for instance, if you need to check if a test score is passing or if you need to validate a user's text input.</li>
+        <li>Compared values are returned as boolean (true/false.)</li>
+    </ol>
+
+    <h3>Refresh for prompt/confirm window exercise.</h3>
+
+</body>
+</html>
