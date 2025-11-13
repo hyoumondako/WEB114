@@ -1,0 +1,54 @@
+<!--Loren Bracciano 11/14/25-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gas Average</title>
+</head>
+<style>
+    body {background-color: #fffae5; font-family: Arial, Helvetica, sans-serif;}
+</style>
+
+<script>
+  let username = prompt("Enter your name.");
+let entryCount = 0;
+let total = 0;
+let weeklyGas = parseFloat(prompt("Enter your first week's gas total. Enter -1 when you are done."));
+
+function calcGasAvg(){
+  while (weeklyGas !== -1) {
+    total += weeklyGas;
+    entryCount++;
+    weeklyGas = parseFloat(prompt("Enter your next week's gas total. Enter -1 when you are done."));  
+  }
+  
+  let averageGas;
+  if (entryCount > 0) {
+    averageGas = total / entryCount;  
+  } else {
+    averageGas = 0;  
+  }
+  return averageGas;
+} 
+
+let gas = calcGasAvg(); 
+
+confirm(username + "'s average weekly gas bill is $" + gas.toFixed(2));
+
+if (entryCount === 0) {
+  confirm("No gas totals were entered.");
+} else if (entryCount === 1) {
+  confirm("You entered " + entryCount + " gas total.");
+} else {
+  confirm("You entered " + entryCount + " gas totals.");
+}
+
+</script>
+
+<body>
+<p><b>1. What is the purpose of a function?</b></p>
+<p>Functions are a reusable block of code that performs a certain task. They can be called multiple times throughout a program, so functions save time, space, and processing power.</p>
+
+</body>
+</html>
