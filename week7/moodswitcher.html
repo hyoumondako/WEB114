@@ -1,0 +1,42 @@
+<!--Loren Bracciano 11/18/25-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Switcher</title>
+</head>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    section {text-align: center;}
+    </style>
+<body>
+    <section>
+  <h1>How are you?</h1>
+  <p>Click a mood to change the vibe!</p>
+
+<button class="mood-btn" data-mood = "happy">Happy</button> 
+<button class="mood-btn" data-mood = "calm">Calm</button> 
+<button class="mood-btn" data-mood = "excited">Excited</button> 
+<button class="mood-btn" data-mood = "chill">Chill</button> 
+<button class="mood-btn" data-mood = "mysterious">Mysterious</button>
+
+<i><p id="moodDisplay">Choose a mood...</p></i>
+    </section>
+
+
+<!--Put the question and answer below here-->
+<p>1. Why is the JavaScript textContent property safer than innerHTML?</p>
+<p>textContent only scans the plain text of HTML while innerHTML parses the HTML. If the HTML is from an untrusted source, it may contain malicious scripts.</p>
+<p>2. If use an HTML text box on a page and it has an attribute (for example id="text")  and a corresponding DOM property (for example, const box = document.getElementById("text"). 
+How do the two elements relate?</p>
+<p>The DOM property accesses the HTML "text" attribute and the DOM property will dynamically display the HTML "text" attribute. </p>
+<p>3. What would happen to the text box with id="text" if it added this line to the code above:<br>
+text.textContent = "Hello!"</p>
+<p>The text box's text content will display "Hello!" (with no quotes.)</p>
+
+
+  <!-- Link to the external script -->
+  <script src="mood.js"></script>
+</body>
+</html>
