@@ -29,7 +29,6 @@ h2 {
     box-sizing: border-box;
     margin: 0 auto 20px auto;
     display: block;
-
 }
 
 .generator input {
@@ -40,13 +39,13 @@ h2 {
 }
 
 .generator input[type="reset"] {
-       width: 80%;
-       box-sizing: border-box;
-       margin: 20px auto;
-       display: block;
-       padding: 5px;
-       cursor: pointer;
-   }
+    width: 80%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
 
 #meme {
     width: 70%;
@@ -54,7 +53,6 @@ h2 {
     display: block;
     border: 1px solid #a18469;
 }
-
 
 /* Medium/tablet size */
 @media (min-width: 35em) {
@@ -65,66 +63,60 @@ h2 {
         margin: 0 auto 10px auto;
         display: block;
     }
-
+    
     .generator select {
         width: 80%;
         box-sizing: border-box;
         margin: 0 auto 20px auto;
         display: block;
-
     }
-
+    
     .generator input {
         width: 80%;
         box-sizing: border-box;
         margin: 0 auto 20px auto;
         display: block;
     }
-
-    
     
     #meme {
         width: 70%;
     }
-
 }
 
 /* Large/desktop size */
 @media (min-width: 45em) {
     .generator label {
-    font-weight: bold;
-    width: 500px;
-    box-sizing: border-box;
-    margin: 0 auto 10px auto;
-    display: block;
-}
-
+        font-weight: bold;
+        width: 500px;
+        box-sizing: border-box;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+    
     .generator select {
         width: 500px;
         box-sizing: border-box;
         margin: 0 auto 20px auto;
         display: block;
-
     }
-
+    
     .generator input {
         width: 500px;
         box-sizing: border-box;
         margin: 0 auto 20px auto;
         display: block;
     }
-
+    
     .generator input[type="reset"] {
-       width: 500px;
-       box-sizing: border-box;
-       margin: 0 auto 20px auto;
-       display: block;
-       padding: 5px;
-       cursor: pointer;
-   }
-
+        width: 500px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
     #meme {
         width: 450px;
     }
-
 }
