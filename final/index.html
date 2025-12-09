@@ -1,0 +1,46 @@
+<!--Loren Bracciano 12/12/25-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Meme Generator</title>
+    <link rel="icon" type="image/x-icon" href="images/dog-face.svg">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h2>Welcome to the Dog Meme Generator!</h2>
+
+    <!-- Theme Selection -->
+    <section class="generator">
+
+        <label>Choose a theme:</label>
+        <select name="theme" id="themeSelect">
+            <option value="happy">Happy</option>
+            <option value="tired">Tired</option>
+            <option value="hungry">Hungry</option>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="random">Choose for me!</option>
+        </select>
+  
+    <!-- Text Entry -->
+    <label>Top text:</label>
+    <input type="text" id="topTextInput">
+    <label>Bottom text:</label>
+    <input type="text" id="bottomTextInput">
+
+    <!-- Image Area -->
+    <canvas id="meme"></canvas>
+
+    <!-- Reset everything -->
+    <input type="reset" value="Start Over">
+    
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
